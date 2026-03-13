@@ -3220,12 +3220,15 @@ input, select, textarea {
 
 	}
 
+/* ----- Fix header text wrapping on mobile ----- */
+
 #header h1 strong,
 #header h1 .title-line {
 	display: block;
 }
 
 @media screen and (max-width: 736px) {
+
 	#header h1 {
 		font-size: 1.35em;
 		line-height: 1.5;
@@ -3233,5 +3236,11 @@ input, select, textarea {
 
 	#header .inner {
 		width: 100%;
+		padding: 1.5em;
 	}
+
+	#header .image.avatar {
+		margin-bottom: 1em;
+	}
+
 }
